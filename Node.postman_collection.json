@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "51ed0920-5b1a-47cb-ad5d-0d86d42626d9",
+		"name": "Node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33744827"
+	},
+	"item": [
+		{
+			"name": "Specials",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost_personal_finance_url}}api/specials",
+					"host": [
+						"{{localhost_personal_finance_url}}api"
+					],
+					"path": [
+						"specials"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Node Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"elanthiraiyan.thiagarajan@gmail.com\",\n  \"password\": \"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register New User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"elanthiraiyan.thiagarajan@gmail.com\",\n  \"password\": \"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveEvents",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoiNjY1MWZmMmZlNzJmNDI4MDE5NDA5YTFkIiwiaWF0IjoxNzE2NzE0NDE2fQ.CDVoZyNmnq_sSJp7ESrqrBPbSvkGM2-MxTUWZ_Syty8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"name\": \"Auto Expo\",\n        \"description\": \"lorem ipsum\",\n        \"date\": \"2012-04-23T18:25:43.511Z\"\n    },\n    {\n        \"name\": \"Auto Expo\",\n        \"description\": \"lorem ipsum\",\n        \"date\": \"2012-04-23T18:25:43.511Z\"\n    },\n    {\n        \"name\": \"Auto Expo\",\n        \"description\": \"lorem ipsum\",\n        \"date\": \"2012-04-23T18:25:43.511Z\"\n    },\n    {\n        \"name\": \"Auto Expo\",\n        \"description\": \"lorem ipsum\",\n        \"date\": \"2012-04-23T18:25:43.511Z\"\n    },\n    {\n        \"name\": \"Auto Expo\",\n        \"description\": \"lorem ipsum\",\n        \"date\": \"2012-04-23T18:25:43.511Z\"\n    },\n    {\n        \"name\": \"Auto Expo\",\n        \"description\": \"lorem ipsum\",\n        \"date\": \"2012-04-23T18:25:43.511Z\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost_personal_finance_url}}api/saveEvents",
+					"host": [
+						"{{localhost_personal_finance_url}}api"
+					],
+					"path": [
+						"saveEvents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Events",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoiNjY1MWZmMmZlNzJmNDI4MDE5NDA5YTFkIiwiaWF0IjoxNzE2NzE0NDE2fQ.CDVoZyNmnq_sSJp7ESrqrBPbSvkGM2-MxTUWZ_Syty8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost_personal_finance_url}}api/events",
+					"host": [
+						"{{localhost_personal_finance_url}}api"
+					],
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveSpecialsEvents",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoiNjY1MWZmMmZlNzJmNDI4MDE5NDA5YTFkIiwiaWF0IjoxNzE2NzE0NDE2fQ.CDVoZyNmnq_sSJp7ESrqrBPbSvkGM2-MxTUWZ_Syty8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"name\": \"Auto Expo\",\n        \"description\": \"lorem ipsum\",\n        \"date\": \"2012-04-23T18:25:43.511Z\"\n    },\n    {\n        \"name\": \"Auto Expo\",\n        \"description\": \"lorem ipsum\",\n        \"date\": \"2012-04-23T18:25:43.511Z\"\n    },\n    {\n        \"name\": \"Auto Expo\",\n        \"description\": \"lorem ipsum\",\n        \"date\": \"2012-04-23T18:25:43.511Z\"\n    },\n    {\n        \"name\": \"Auto Expo\",\n        \"description\": \"lorem ipsum\",\n        \"date\": \"2012-04-23T18:25:43.511Z\"\n    },\n    {\n        \"name\": \"Auto Expo\",\n        \"description\": \"lorem ipsum\",\n        \"date\": \"2012-04-23T18:25:43.511Z\"\n    },\n    {\n        \"name\": \"Auto Expo\",\n        \"description\": \"lorem ipsum\",\n        \"date\": \"2012-04-23T18:25:43.511Z\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost_personal_finance_url}}api/saveSpecialsEvents",
+					"host": [
+						"{{localhost_personal_finance_url}}api"
+					],
+					"path": [
+						"saveSpecialsEvents"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
